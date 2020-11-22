@@ -187,11 +187,31 @@ if (items.length > 0) {
 let programsSlider = new Swiper(".educational-programs__slider", {
 	direction: "horizontal",
 	loop: true,
-	slidesPerView: 4,
-	spaceBetween: 25,
+
 	pagination: {
 		el: ".educational-programs__links",
 		clickable: true,
+	},
+	breakpoints: {
+		// when window width is >= 320px
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 25,
+		},
+		550: {
+			slidesPerView: 2,
+			spaceBetween: 25,
+		},
+		// when window width is >= 480px
+		768: {
+			slidesPerView: 3,
+			spaceBetween: 25,
+		},
+		// when window width is >= 640px
+		1080: {
+			slidesPerView: 4,
+			spaceBetween: 25,
+		},
 	},
 });
 let exampleSlider = new Swiper(".examples__slider.swiper-container", {
@@ -203,6 +223,27 @@ let exampleSlider = new Swiper(".examples__slider.swiper-container", {
 	navigation: {
 		nextEl: ".examples__arrow_right",
 		prevEl: ".examples__arrow_left",
+	},
+	breakpoints: {
+		// when window width is >= 320px
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 25,
+		},
+		550: {
+			slidesPerView: 2,
+			spaceBetween: 25,
+		},
+		// when window width is >= 480px
+		768: {
+			slidesPerView: 3,
+			spaceBetween: 25,
+		},
+		// when window width is >= 640px
+		1080: {
+			slidesPerView: 4,
+			spaceBetween: 25,
+		},
 	},
 });
 ;

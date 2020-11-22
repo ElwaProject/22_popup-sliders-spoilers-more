@@ -1108,6 +1108,7 @@ body {
 
 .examples__item {
   opacity: 0.7;
+  text-align: center;
 }
 
 .examples__item img {
